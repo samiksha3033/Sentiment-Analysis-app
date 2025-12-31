@@ -30,11 +30,6 @@ A separate version of this project will later be developed using real AI librari
 ## Testing
 Unit tests are written using Python’s `unittest` module to verify different sentiment scenarios.
 
-Run tests using:
-```bash
-python -m unittest
-
-
 Note
 This project intentionally uses mock sentiment logic to focus on application architecture and integration concepts.
 An AI-powered version using open-source NLP libraries will be implemented separately.
