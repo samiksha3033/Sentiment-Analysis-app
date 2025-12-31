@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- PAGE 1 -->
+    <div id="inputPage">
+        <h2>Sentiment Analysis</h2>
+
+        <textarea id="userText" rows="5" placeholder="Enter your text here..."></textarea>
+        <br>
+        <button type="button" onclick="analyzeSentiment()">Analyze</button>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div id="resultPage" style="display:none;">
+        <h2>Analysis Result</h2>
+
+        <p><strong>Your Text:</strong></p>
+        <p id="resultText"></p>
+
+        <p><strong>Sentiment:</strong> <span id="resultSentiment"></span></p>
+        <p><strong>Confidence:</strong> <span id="resultConfidence"></span></p>
+        <p><strong>Score:</strong> <span id="resultScore"></span></p>
+
+        <button type="button" onclick="goBack()">Analyze Another Text</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
